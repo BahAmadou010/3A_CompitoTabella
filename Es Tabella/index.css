@@ -1,0 +1,61 @@
+header {
+    /* Gestione dei colori e del testo */
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+header {
+    /* Viene applicata sempre l'ultima proprietà */
+
+    /* Solo il secondo colore è visualizzato */
+
+    /* Gestisce la visualizzazione del selettore in cui è inserito */
+    /*
+        1* display:flex -> tutti i figlio
+
+    */
+    
+    display: block;
+    /* block=mostra    none=nasconde*/
+}
+
+body {
+
+    /* spazio tra gli oggetti quando si fa spce-around è che lo spazio non è univoco e gli oggetti
+    vengono messi a caso, invece con space-evenly mette gli oggetti ad una distanza univoca
+
+    justify content si occupa della posizione degli oggetti e la loro distanza mentre align-items
+    si occupa dei lati
+    */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    /* vh -> view height -> altezza dell'are visibile della pagina  max 100 min 0 */
+    margin: 0px;
+    /* spazio attorno al contenitore */
+}
+table {
+    /*elimiba gli spazi tra i bordi*/
+    border-collapse: collapse;
+}
+td::before{
+    list-style-type:decimal;
+}
+td, th {
+    border: 1px solid black;
+}
+section{
+    margin: 48px;
+}
+footer {
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 35px;
+    ;
+}
